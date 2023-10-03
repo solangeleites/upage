@@ -13,7 +13,7 @@ import { HomeStyled } from '../home/HomeStyled';
 const Products = () => {
   return (
     <HomeStyled>
-    <ContainerStyled style={{flexDirection:'column', height:'100%'}}>
+    <ContainerStyled style={{flexDirection:'column', height:'100%', gap:'40px'}}>
       <Title>Nuestros servicios</Title>
       <Paragraph>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum molestiae,

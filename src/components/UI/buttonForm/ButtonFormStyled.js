@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const ButtonStyle = styled.button`
-  background: grey;
+  background: black;
   padding: 0.8rem 1rem;
   outline: none;
   border: none;
@@ -12,7 +12,7 @@ export const ButtonStyle = styled.button`
   transition: all 0.3s ease-in-out;
 
   &:hover {
-    background: black;
+    background: grey;
     transition: all 0.3s ease-in-out;
   }
 `;

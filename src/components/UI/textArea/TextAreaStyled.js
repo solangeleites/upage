@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const TextAreaStyle = styled.textarea`
   border: 1px solid;
-  border-color: ${({ error }) => (error ? "crimson" : "black")};
+  border-color: ${({ isError }) => (isError ? "crimson" : "black")};
   border-radius: 5px;
   padding: 10px;
   width: 350px;

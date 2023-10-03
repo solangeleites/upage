@@ -13,7 +13,7 @@ export const Label = styled.label`
 
 export const InputStyle = styled.input`
   border: 1px solid ;
-  border-color: ${({ error }) => (error ? "crimson" : "black")};
+  border-color: ${({ isError }) => (isError ? "crimson" : "black")};
   border-radius: 5px;
   padding: 10px;
   width: 350px;

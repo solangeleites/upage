@@ -6,6 +6,11 @@ export const HomeStyled = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+margin: 0 auto;
+
+${tablet}{
+  max-width: 800px;
+}
 `;
 
 export const ContainerStyled = styled.div`
@@ -37,16 +42,17 @@ export const SecondContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 1500px;
   padding: 25px;
+  width: 100%;
 
   ${mobile} {
-    width: calc(100% - 0px);
+    padding: 10px;
   }
+
   ${tablet} {
-    width: calc(100% - 0px);
+    padding: 15px;
   }
-`;
+`
 export const Title = styled.h1`
   font-size: 30px;
   width: 100%;
@@ -115,13 +121,6 @@ export const Image = styled.div`
   justify-content: center;
   align-items: center;
 
-  ${mobile} {
-  }
-
-  ${tablet} {
-    width: calc(100% - 50px);
-    height: 350px;
-  }
 `;
 
 export const CardText = styled.h4`

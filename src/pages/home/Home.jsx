@@ -14,9 +14,9 @@ import {
 import { SiStylelint } from 'react-icons/si';
 import { GrOptimize } from 'react-icons/gr';
 import { FaUserFriends } from 'react-icons/fa';
-import Input from '../../components/UI/Input';
 
 import Footer from '../../footer/Footer';
+import ButtonForm from '../../components/UI/ButtonForm/ButtonForm';
 
 const Home = () => {
   return (
@@ -112,7 +112,7 @@ const Home = () => {
 
       <SecondContainer style={{height: '300px'}}>
         <Text>Suscribite a nuestro newsletter para recibir más información</Text>
-        <Input />
+        {/* <Input /> */}
       </SecondContainer>
 
 <Footer />

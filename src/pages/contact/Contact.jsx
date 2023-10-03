@@ -1,20 +1,27 @@
 import React from 'react'
 import { HomeStyled, Text } from '../home/HomeStyled'
-import { Formulario, ContainerForm } from './ContactStyle'
- import Input from '../../components/UI/Input'
- import TextArea from '../../components/TextArea/TextArea'
-import ButtonForm from '../../components/ButtonForm/ButtonForm'
-
-import  {FormInitialValues} from '../../formik/initialValues'
+import { ContainerForm, Formulario } from './ContactStyle'
+import Input from '../../components/UI/input/Input'
+import TextArea from '../../components/UI/textArea/TextArea'
+import ButtonForm from '../../components/UI/buttonForm/ButtonForm'
+import {FormInitialValues} from '../../formik/initialValues'
 import {FormValidationSchema} from '../../formik/validationSchema'
 
 
 
-
 const Contact = () => {
+  const phoneRegex = /\d{10}$/;
+
   return (
     <HomeStyled>
 <Text>Dejanos tus datos y nosotros te contactamos </Text>
+
+
+
+
+
+
+
 <ContainerForm
           initialValues={FormInitialValues}
           validationSchema={FormValidationSchema}
@@ -44,14 +51,20 @@ const Contact = () => {
                 isError={touched.phone && errors.phone}
               ></Input>
               <TextArea
-                name="mensaje"
+                name="msg"
                 label="Mensaje"
-                isError={touched.mensaje && errors.mensaje}
+                isError={touched.msg && errors.msg}
               />
               <ButtonForm />
             </Formulario>
           )}
         </ContainerForm>
+
+
+
+
+
+
 
 
 

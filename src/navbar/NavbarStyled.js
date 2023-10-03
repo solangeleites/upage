@@ -1,16 +1,19 @@
 import styled from 'styled-components';
-
-import { mobile } from '../queries/MediaQueries';
+import { mobile, tablet } from '../queries/MediaQueries';
 
 export const ContainerNavbar = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 50px 90px;
+  height: 120px;
+  width: 100%;
+  padding: 0px 92px;
 
   ${mobile} {
+    padding: 25px;
+  }
+  ${tablet}{
     padding: 15px;
-    position: relative;
   }
 `;
 
@@ -24,6 +27,7 @@ export const ContainerLinks = styled.div`
   justify-content: space-between;
   align-items: center;
   width: 500px;
+  background-color: white;
 
 
   ${mobile} {
@@ -32,11 +36,10 @@ export const ContainerLinks = styled.div`
     position: absolute;
     top: 100%;
     left: 0;
-    height: calc(100vh - 20px);
+    height: calc(100vh - 120px);
     justify-content: space-around;
     align-items: center;
     z-index: 2;
     transition: all 0.5s ease-in-out;
-    transform: ${props => props.isOpen ? 'translateY(0)' : 'translateY(-100%)'};
-  }
+    transform: ${({ isOpen }) => isOpen ? 'translateY(0)' : 'translateY(-100%)'};  }
 `;

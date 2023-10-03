@@ -5,8 +5,8 @@ export const FormValidationSchema = Yup.object({
   name: Yup.string().required('Campo requerido'),
   email: Yup.string().email('Correo inválido').required('Campo requerido'),
   phone: Yup.string()
-    .matches(phoneRegex, 'Telefono inválido')
+    .matches(phoneRegex, 'Celular inválido')
     .required('Campo requerido'),
-  mensaje: Yup.string()
+  msg: Yup.string()
     .max(255, 'Máximo de 255 caracteres').required('Campo requerido')
 });
