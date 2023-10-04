@@ -5,11 +5,11 @@ import Input from '../../components/UI/input/Input'
 import ButtonForm from '../../components/UI/buttonForm/ButtonForm'
 import {FormInitialValues} from '../../formik/initialValues'
 import {FormValidationSchema} from '../../formik/validationSchema'
-import TextArea from '../../components/UI/textArea/textArea'
+import TextArea from '../../components/UI/textArea/TextArea';
+
 
 
 const Contact = () => {
-  const phoneRegex = /\d{10}$/;
 
   
 
