@@ -2,15 +2,16 @@ import React from 'react'
 import { HomeStyled, Text } from '../home/HomeStyled'
 import { ContainerForm, Formulario } from './ContactStyle'
 import Input from '../../components/UI/input/Input'
-import TextArea from '../../components/UI/textArea/TextArea'
 import ButtonForm from '../../components/UI/buttonForm/ButtonForm'
 import {FormInitialValues} from '../../formik/initialValues'
 import {FormValidationSchema} from '../../formik/validationSchema'
-
+import TextArea from '../../components/UI/textArea/textArea'
 
 
 const Contact = () => {
   const phoneRegex = /\d{10}$/;
+
+  
 
   return (
     <HomeStyled>

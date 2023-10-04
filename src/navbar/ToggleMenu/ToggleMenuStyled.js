@@ -1,7 +1,8 @@
 import styled from 'styled-components';
-import { mobile } from '../../queries/MediaQueries';
+import { tablet } from '../../queries/MediaQueries';
 
-export const MenuHamburger = styled.div`
+
+export const HambugerContainer = styled.div`
   color: black;
   height: 55%;
   width: 2.2rem;
@@ -10,12 +11,13 @@ export const MenuHamburger = styled.div`
   align-items: center;
   justify-content: center;
   z-index: 10;
-    display: none;
-  ${mobile} {
+  display: none;
+
+  ${tablet} {
     display: flex;
   }
-  
 `;
+
 export const Icon = styled.span`
   position: relative;
   height: 1.5px;

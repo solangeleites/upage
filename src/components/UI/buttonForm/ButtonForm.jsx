@@ -1,10 +1,13 @@
-import React from 'react'
-import { ButtonStyle } from './ButtonFormStyled'
+import React from 'react';
+import { ButtonStyle } from './ButtonFormStyled';
 
-const ButtonForm = ({onSubmit}) => {
-  return (
-    <ButtonStyle type='submit'>Enviar</ButtonStyle>
-  )
-}
+const ButtonForm = ({ onSubmit }) => {
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   onSubmit();
+  // };
 
-export default ButtonForm
+  return <ButtonStyle type="submit">Enviar</ButtonStyle>;
+};
+
+export default ButtonForm;

@@ -6,6 +6,7 @@ import Contact from '../pages/contact/Contact'
 import NotFound from '../pages/notFound/NotFound'
 import Navbar from '../navbar/Navbar'
 import Blog from '../pages/blog/Blog'
+import Footer from '../footer/Footer'
 const Router = () => {
   return (
     <BrowserRouter>
@@ -24,6 +25,7 @@ const Router = () => {
 
 
     </Routes>
+    <Footer />
     </BrowserRouter>
   )
 }

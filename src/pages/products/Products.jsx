@@ -9,19 +9,19 @@ import {
 } from '../home/HomeStyled';
 import Button from '../../components/Button/Button';
 import { HomeStyled } from '../home/HomeStyled';
+import { CardProducts, ContainerCardsProducts, ContainerProducts } from './ProductsStyled';
 
 const Products = () => {
   return (
     <HomeStyled>
-    <ContainerStyled style={{flexDirection:'column', height:'100%', gap:'40px'}}>
+    <ContainerProducts style={{flexDirection:'column', height:'100%', gap:'40px'}}>
       <Title>Nuestros servicios</Title>
       <Paragraph>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum molestiae,
-        illum ullam ipsum quod porro qui ducimus ex possimus quisquam.
+        Te damos dos opciones para que elijas la que mejor se adapte a tus necesidades
       </Paragraph>
 
-      <ContainerCards>
-        <Card>
+      <ContainerCardsProducts>
+        <CardProducts>
           <CardText style={{ fontSize: '32px' }}>Landing page</CardText>
           <ul style={{ fontSize: '20px' }}>
             <li> Diseño responsive</li>
@@ -33,9 +33,9 @@ const Products = () => {
 
           <Text style={{ fontSize: '30px', fontWeight: '700' }}>$1000</Text>
           <Button>Solicitar</Button>
-        </Card>
+        </CardProducts>
 
-        <Card>
+        <CardProducts>
           <CardText style={{ fontSize: '32px' }}>Sitio web</CardText>
           <ul style={{ fontSize: '20px' }}>
             <li> Diseño responsive</li>
@@ -48,9 +48,9 @@ const Products = () => {
 
           <Text style={{ fontSize: '30px', fontWeight: '700' }}>$2500</Text>
           <Button>Solicitar</Button>
-        </Card>
-      </ContainerCards>
-    </ContainerStyled>
+        </CardProducts>
+      </ContainerCardsProducts>
+    </ContainerProducts>
     </HomeStyled>
   );
 };

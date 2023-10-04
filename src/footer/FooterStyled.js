@@ -8,6 +8,7 @@ align-items: center;
 height: 300px;
 width: 100%;
 background-color: black;
+margin-top: 50px;
 `
 
 export const Text = styled.p`

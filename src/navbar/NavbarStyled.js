@@ -30,16 +30,18 @@ export const ContainerLinks = styled.div`
   background-color: white;
 
 
-  ${mobile} {
+  ${tablet}{
+    position: absolute;
+    background-color: white;
     flex-direction: column;
     width: 100%;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    height: calc(100vh - 120px);
-    justify-content: space-around;
-    align-items: center;
+    top: 80px;
+    height: calc(100vh - 70px);
     z-index: 2;
     transition: all 0.5s ease-in-out;
-    transform: ${({ isOpen }) => isOpen ? 'translateY(0)' : 'translateY(-100%)'};  }
+    transform: ${props => props.isOpen ? 'translateX(0)' : 'translateX(-100%)'};
+    justify-content: center;
+    gap: 50px;
+  }
+
 `;

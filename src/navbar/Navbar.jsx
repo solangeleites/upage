@@ -17,7 +17,7 @@ const Navbar = () => {
         <ContainerLinks isOpen={ctx.isMenuOpen}>
             <LinkItem to="/">Inicio</LinkItem>
             <LinkItem to="/servicios">Servicios</LinkItem>
-            <LinkItem to="/blog">Blog</LinkItem>
+            {/* <LinkItem to="/blog">Blog</LinkItem> */}
             <LinkItem to="/contacto">Contacto</LinkItem>
         </ContainerLinks>
       <ToggleMenu />

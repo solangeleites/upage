@@ -21,19 +21,19 @@ export const ContainerStyled = styled.div`
   height: 600px;
   width: 1500px;
   background-color: var(--naranja-pastel);
-  padding: 15px;
-  ${mobile} {
-    width: calc(100% - 0px);
-  }
 
-  ${tablet} {
-    width: calc(100% - 0px);
+  ${tablet}{
+    flex-direction: column;
+    width: 100%;
   }
 `;
 
 export const Text = styled.p`
   font-size: 25px;
   margin: 25px 0;
+  ${tablet}{
+    text-align: center;
+  }
 `;
 
 
@@ -42,7 +42,7 @@ export const SecondContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 25px;
+  padding: 0 92px 0 92px;
   width: 100%;
 
   ${mobile} {
@@ -72,7 +72,8 @@ export const ContainerCards = styled.div`
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  width: 1500px;
+  width: 100%;
+  gap: 20px;
 
   ${mobile} {
     flex-direction: column;
@@ -123,7 +124,7 @@ export const Image = styled.div`
 
 `;
 
-export const CardText = styled.h4`
+export const CardTitle = styled.h4`
   font-size: 20px;
   text-align: justify;
   margin: 0 30px;
@@ -133,3 +134,11 @@ export const CardText = styled.h4`
     font-weight: 500;
   }
 `;
+export const CardText = styled.p`
+font-size: 20px;
+text-align: center;
+padding: 10px;
+  ${tablet}{
+    text-align: center;
+  }
+`
