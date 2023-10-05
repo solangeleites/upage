@@ -96,7 +96,8 @@ Te invitamos a unirte a nosotros en esta emocionante travesía empresarial. Sé 
       </SecondContainer>
 
       <ContainerNewsletter>
-        <Text>Suscribite a nuestro newsletter para recibir más información</Text>
+        <Text style={{textAlign:'center'}}>Suscribite a nuestro newsletter para recibir más información</Text>
+        
         <Newsletter />
       </ContainerNewsletter>
 

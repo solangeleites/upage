@@ -14,6 +14,7 @@ margin-top: 50px;
 export const Text = styled.p`
 font-size: 20px;
 color: white;
-
+text-align: center;
+padding: 0 20px;
 
 `

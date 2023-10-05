@@ -15,17 +15,17 @@ ${tablet}{
 
 export const ContainerStyled = styled.div`
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: center;
   height: 600px;
-  width: 1500px;
+  padding: 0 92px;
+  width: 90%;
   background-color: var(--naranja-pastel);
 
   ${tablet}{
     flex-direction: column;
-    width: 100%;
-  }
+    width: 95%;
+     }
 `;
 
 export const Text = styled.p`
@@ -33,9 +33,9 @@ export const Text = styled.p`
   margin: 25px 0;
   text-align: left;
 
-  ${tablet}{
+  /* ${tablet}{
     text-align: center;
-  }
+  } */
 `;
 
 
@@ -99,17 +99,16 @@ export const Card = styled.div`
   border-radius: 17px;
 
   ${mobile} {
-    margin: 10px 0;
-    height: 600px;
   }
 
   ${tablet} {
     width: calc(100% - 150px);
     margin: 10px 0;
-    height: 600px;
+    height: 450px;
 
     ${mobile} {
-      width: 100%; // Agregar esta regla para mobile dentro de la media query para tablet
+      width: 100%;
+      height: 550px;
     }
   }
 `;
