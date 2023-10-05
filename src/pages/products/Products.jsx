@@ -9,7 +9,7 @@ import {
 } from '../home/HomeStyled';
 import Button from '../../components/Button/Button';
 import { HomeStyled } from '../home/HomeStyled';
-import { CardProducts, ContainerCardsProducts, ContainerProducts } from './ProductsStyled';
+import { CardProducts, ContainerCardsProducts, ContainerProducts, Lista } from './ProductsStyled';
 
 const Products = () => {
   return (
@@ -23,13 +23,13 @@ const Products = () => {
       <ContainerCardsProducts>
         <CardProducts>
           <CardText style={{ fontSize: '32px' }}>Landing page</CardText>
-          <ul style={{ fontSize: '20px', lineHeight: '1.5' }}>
+          <Lista style={{ fontSize: '20px', lineHeight: '1.5' }}>
             <li> Diseño responsive</li>
             <li>Contenido de hasta 4 secciones</li>
             <li>Contenido fijo</li>
             <li>Integracion con redes sociales</li>
             <li>Diseño profesional básico</li>
-          </ul>
+          </Lista>
 
           <Text style={{ fontSize: '30px', fontWeight: '700' }}>$1000</Text>
           <Button>Solicitar</Button>
@@ -37,14 +37,14 @@ const Products = () => {
 
         <CardProducts>
           <CardText style={{ fontSize: '32px' }}>Sitio web</CardText>
-          <ul style={{ fontSize: '20px', lineHeight: '1.5' }}>
+          <Lista style={{ fontSize: '20px', lineHeight: '1.5' }}>
             <li> Diseño responsive</li>
             <li>Contenido de hasta 6 secciones</li>
             <li>Contenido editable</li>
             <li>Integracion con redes sociales</li>
             <li>Diseño profesional avanzado</li>
             <li>Catálogo de productos</li>
-          </ul>
+          </Lista>
 
           <Text style={{ fontSize: '30px', fontWeight: '700' }}>$2500</Text>
           <Button>Solicitar</Button>
