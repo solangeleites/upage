@@ -1,18 +1,25 @@
 import styled from 'styled-components';
+import { SecondContainer } from '../../pages/home/HomeStyled';
 
-export const Newsletter = styled.input`
+export const NewsletterStyle = styled.input`
   height: 40px;
   width: 400px;
   outline: none;
   padding: 10px;
   border-radius: 5px;
-  border: 1px solid black;
-
+  border: 1px solid  transparent;
   &:focus {
     outline: none;
   }
-  :placeholder {
+  &::placeholder{
     font-family: 'Manrope', sans-serif;
-    color: red;
+    font-size: 15px;
   }
+`;
+
+export const ContainerNewsletter = styled(SecondContainer)`
+  height: 350px;
+  width: 1500px;
+  background-color: var(--naranja-pastel);
+  margin-top:50px;
 `;

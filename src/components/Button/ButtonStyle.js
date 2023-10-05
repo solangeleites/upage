@@ -7,12 +7,12 @@ export const ButtonStyled = styled.button`
   border: 1px solid black;
   bottom: 50px;
   right: 150px;
-  background: transparent;
+  background-color: black;
+  color: white;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 
     &:hover {
-        background-color: black;
-        color: white;
+        background-color: var(--naranja-pastel);
     }
 `;

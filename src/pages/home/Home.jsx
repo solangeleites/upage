@@ -16,8 +16,8 @@ import { SiStylelint } from 'react-icons/si';
 import { GrOptimize } from 'react-icons/gr';
 import { FaUserFriends } from 'react-icons/fa';
 
-import Footer from '../../footer/Footer';
-import { Newsletter } from '../../components/Newsletter/NewsletterStyled';
+import { ContainerNewsletter } from '../../components/Newsletter/NewsletterStyled';
+import Newsletter from '../../components/Newsletter/Newsletter';
 
 const Home = () => {
   return (
@@ -95,10 +95,10 @@ Te invitamos a unirte a nosotros en esta emocionante travesía empresarial. Sé 
         </ContainerCards>
       </SecondContainer>
 
-      <SecondContainer style={{height: '300px'}}>
+      <ContainerNewsletter>
         <Text>Suscribite a nuestro newsletter para recibir más información</Text>
         <Newsletter />
-      </SecondContainer>
+      </ContainerNewsletter>
 
     </HomeStyled>
   );

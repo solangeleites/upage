@@ -41,13 +41,13 @@ const Contact = () => {
               ></Input>
               <Input
                 name="email"
-                label="Correo Electronico"
+                label="Email"
                 type="email"
                 isError={touched.email && errors.email}
               ></Input>
               <Input
                 name="phone"
-                label="Telefono"
+                label="Teléfono"
                 type="tel"
                 isError={touched.phone && errors.phone}
               ></Input>

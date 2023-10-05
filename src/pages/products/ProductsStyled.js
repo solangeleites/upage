@@ -7,11 +7,16 @@ export const ContainerProducts = styled(ContainerStyled)`
 
 export const ContainerCardsProducts = styled(ContainerCards)`
   justify-content: center;
+  align-items: baseline;
+
 `;
 
 export const CardProducts = styled(Card)`
-cursor: pointer;
-    &:hover {
+  justify-content: baseline;
+
+
+  cursor: pointer;
+  &:hover {
     transition: ease 0.5s;
     background-color: grey;
   }

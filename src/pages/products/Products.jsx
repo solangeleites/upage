@@ -23,7 +23,7 @@ const Products = () => {
       <ContainerCardsProducts>
         <CardProducts>
           <CardText style={{ fontSize: '32px' }}>Landing page</CardText>
-          <ul style={{ fontSize: '20px' }}>
+          <ul style={{ fontSize: '20px', lineHeight: '1.5' }}>
             <li> Diseño responsive</li>
             <li>Contenido de hasta 4 secciones</li>
             <li>Contenido fijo</li>
@@ -37,7 +37,7 @@ const Products = () => {
 
         <CardProducts>
           <CardText style={{ fontSize: '32px' }}>Sitio web</CardText>
-          <ul style={{ fontSize: '20px' }}>
+          <ul style={{ fontSize: '20px', lineHeight: '1.5' }}>
             <li> Diseño responsive</li>
             <li>Contenido de hasta 6 secciones</li>
             <li>Contenido editable</li>

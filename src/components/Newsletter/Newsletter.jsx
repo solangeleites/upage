@@ -1,8 +1,8 @@
 import React from 'react';
-import { Newsletter } from './NewsletterStyled';
+import { NewsletterStyle } from './NewsletterStyled';
 
 const Newsletter = () => {
-  return <Newsletter placeholder="Ingresa tu email" type="email"></Newsletter>;
+  return <NewsletterStyle placeholder="Ingresa tu email" type="email"></NewsletterStyle>;
 };
 
 export default Newsletter;

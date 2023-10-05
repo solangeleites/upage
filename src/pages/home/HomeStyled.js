@@ -31,6 +31,8 @@ export const ContainerStyled = styled.div`
 export const Text = styled.p`
   font-size: 25px;
   margin: 25px 0;
+  text-align: left;
+
   ${tablet}{
     text-align: center;
   }
@@ -70,7 +72,7 @@ export const Line = styled.p`
 export const ContainerCards = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
   gap: 20px;
@@ -136,7 +138,7 @@ export const CardTitle = styled.h4`
 `;
 export const CardText = styled.p`
 font-size: 20px;
-text-align: center;
+text-align: left;
 padding: 10px;
   ${tablet}{
     text-align: center;
