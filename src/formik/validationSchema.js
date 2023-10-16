@@ -7,6 +7,5 @@ export const FormValidationSchema = Yup.object({
   phone: Yup.string()
     .matches(phoneRegex, 'Celular inválido')
     .required('Campo requerido'),
-  msg: Yup.string()
-    .max(255, 'Máximo de 255 caracteres').required('Campo requerido')
+  mensaje: Yup.string().required('Campo requerido'),
 });

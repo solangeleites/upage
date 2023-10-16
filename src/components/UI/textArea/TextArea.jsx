@@ -3,12 +3,14 @@ import { InputContainer, Label } from '../input/InputStyled';
 import {Error, TextAreaStyle} from './TextAreaStyled';
 
 
-const TextArea = ({ label, isError, ...field }) => {
+const TextArea = ({children, label, ...field}) => {
+
+
     return (
       <InputContainer>
-        <Label htmlFor={label}>{label}</Label>
-        <TextAreaStyle id={label} {...field} isError={false}  />
-         {isError && <Error>{isError}</Error>} 
+        <Label htmlFor={label}>{label}
+        {children}</Label>
+        <TextAreaStyle id={label} {...field} />
       </InputContainer>
     );
   };

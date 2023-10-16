@@ -18,7 +18,7 @@ const Navbar = () => {
             <LinkItem to="/">Inicio</LinkItem>
             <LinkItem to="/servicios">Servicios</LinkItem>
             {/* <LinkItem to="/blog">Blog</LinkItem> */}
-            <LinkItem to="/contacto">Contacto</LinkItem>
+            <LinkItem to="/form">Contacto</LinkItem>
         </ContainerLinks>
       <ToggleMenu />
 

@@ -17,7 +17,7 @@ const Router = () => {
         <Route path="servicios" element={<Products />} />
         <Route path="blog" element={<Blog />} />
 
-        <Route path="contacto" element={<Contact />} />
+        <Route path="form" element={<Contact />} />
 
 
         <Route path="*" element={<NotFound />} />

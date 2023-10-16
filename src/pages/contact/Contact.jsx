@@ -8,17 +8,10 @@ import { FormValidationSchema } from '../../formik/validationSchema';
 import TextArea from '../../components/UI/textArea/TextArea';
 import axios from 'axios';
 import { BASE_URL } from '../../utils/constants';
+import { ErrorMessage } from 'formik';
 
 const Contact = () => {
-  const handleSubmit = async (values, { resetForm }) => {
-    try {
-      const response = await axios.post(BASE_URL, values);
-      console.log('Respuesta del backend', response.data);
-      resetForm();
-    } catch (error) {
-      console.error(('Error al enviar datos al backend: ', error));
-    }
-  };
+  const renderError = (message) => <p>{message}</p>;
 
   return (
     <HomeStyled>
@@ -27,7 +20,11 @@ const Contact = () => {
       <ContainerForm
         initialValues={FormInitialValues}
         validationSchema={FormValidationSchema}
-        onSubmit={handleSubmit}  >
+        onSubmit={async (values, { resetForm }) => {
+          await onSubmit(values);
+          resetForm();
+        }}
+      >
         {({ touched, errors }) => (
           <Formulario>
             <Input
@@ -49,10 +46,13 @@ const Contact = () => {
               isError={touched.phone && errors.phone}
             ></Input>
             <TextArea
-              name="msg"
-              label="Mensaje"
-              isError={touched.msg && errors.msg}
-            />
+            name="mensaje"
+            label="Mensaje"
+            type="text"
+            >
+              
+              </TextArea>
+            
             <ButtonForm />
           </Formulario>
         )}
