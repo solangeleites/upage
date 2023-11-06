@@ -8,6 +8,10 @@ export const ContainerNavbar = styled.nav`
   height: 120px;
   width: 100%;
   padding: 0px 92px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.10);
+  background-color: white;
+  position: fixed;
+  top: 0;
 
   ${mobile} {
     padding: 0px;
@@ -20,6 +24,11 @@ export const ContainerNavbar = styled.nav`
 export const Logo = styled.h1`
   font-size: 50px;
   cursor: pointer;
+  font-weight: 900;
+  & img{
+    width: 100px;
+    height: 100px;
+  }
 `;
 
 export const ContainerLinks = styled.div`
@@ -27,16 +36,15 @@ export const ContainerLinks = styled.div`
   justify-content: space-between;
   align-items: center;
   width: 500px;
-  background-color: white;
+
 
   ${tablet} {
     position: absolute;
-    background-color: white;
     flex-direction: column;
-    top: 110px;
+    top: 240px;
     width: calc(100% - 25px);
     height: calc(100% - 60px);
-    z-index: 2;
+    z-index: 999999;
     transition: all 0.5s ease-in-out;
     transform: ${(props) =>
       props.isOpen ? 'translateX(0)' : 'translateX(-100%)'};
@@ -44,7 +52,7 @@ export const ContainerLinks = styled.div`
     gap: 50px;
 
     ${mobile} {
-      top: 110px;
+      top: 220px;
       left: 0;
       width: 100%;
 

@@ -6,11 +6,10 @@ export const HomeStyled = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-margin: 0 auto;
-
-${tablet}{
-  max-width: 800px;
-}
+  padding-top: 120px;
+  ${tablet} {
+    max-width: 800px;
+  }
 `;
 
 export const ContainerStyled = styled.div`
@@ -20,16 +19,16 @@ export const ContainerStyled = styled.div`
   height: 600px;
   padding: 0 92px;
   width: 90%;
-  background-color: var(--naranja-pastel);
+  margin-top: 50px;
 
-  ${tablet}{
+  ${tablet} {
     flex-direction: column;
     width: 95%;
-     }
+  }
 `;
 
 export const Text = styled.p`
-  font-size: 25px;
+  font-size: 20px;
   margin: 25px 0;
   text-align: left;
 
@@ -37,7 +36,17 @@ export const Text = styled.p`
     text-align: center;
   } */
 `;
+export const TextFirst = styled.p`
+  font-size: 60px;
+  text-align: center;
+  font-weight: 900;
+  width: 700px;
+  text-transform: uppercase;
 
+  & span {
+    color: #52bd54;
+  }
+`;
 
 export const SecondContainer = styled.div`
   display: flex;
@@ -46,6 +55,7 @@ export const SecondContainer = styled.div`
   align-items: center;
   padding: 0 92px 0 92px;
   width: 100%;
+  margin: 25px 0px;
 
   ${mobile} {
     padding: 10px;
@@ -54,11 +64,11 @@ export const SecondContainer = styled.div`
   ${tablet} {
     padding: 15px;
   }
-`
+`;
 export const Title = styled.h1`
   font-size: 30px;
   width: 100%;
-  margin: 20px 0;
+  margin: 10px 0;
 `;
 
 export const Line = styled.p`
@@ -66,7 +76,6 @@ export const Line = styled.p`
   height: 1px;
   background-color: grey;
   display: flex;
-  margin: 0px 0px 20px 0px;
 `;
 
 export const ContainerCards = styled.div`
@@ -94,9 +103,10 @@ export const Card = styled.div`
   justify-content: space-around;
   align-items: center;
   width: 400px;
-  height: 500px;
-  border: 1px solid black;
+  height: 450px;
+  border: 1px solid var(--verde);
   border-radius: 17px;
+  margin-top: 25px;
 
   ${mobile} {
   }
@@ -116,13 +126,14 @@ export const Card = styled.div`
 export const Image = styled.div`
   height: 200px;
   width: 200px;
-  border: 1px solid black;
+  border: 1px solid lightgray;
   border-radius: 50%;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-
+  position: relative;
+  z-index: -1;
 `;
 
 export const CardTitle = styled.h4`
@@ -136,10 +147,16 @@ export const CardTitle = styled.h4`
   }
 `;
 export const CardText = styled.p`
-font-size: 20px;
-text-align: left;
-padding: 10px;
-  ${tablet}{
+  font-size: 20px;
+  text-align: center;
+  padding: 10px;
+  ${tablet} {
     text-align: center;
   }
-`
+`;
+export const TextNewsletter = styled.p`
+  font-size: 22px;
+  margin: 25px 0;
+  font-weight: 700;
+  text-align: left;
+`;

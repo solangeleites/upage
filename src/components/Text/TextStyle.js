@@ -8,7 +8,7 @@ export const Title = styled.h1`
     `;
 
     export const Paragraph = styled.p`
-    font-size: 24px;
+    font-size: 20px;
     ${mobile}{
               min-width: 310px;
 

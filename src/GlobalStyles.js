@@ -5,9 +5,13 @@ export const GlobalStyles = createGlobalStyle`
     /* CSS HEX */
 --mandarina: #f18805ff;
 --naranja-brillante: #d95d39ff;
---azul: #202c59ff;
---naranja-pastel: #e4a317ff;
+--azul: #34517A;
+--naranja: #EC8A19;
 --marron: #581f18ff;
+
+
+--verde: #9EE784;
+--verde-oscuro: #5A9E78;
 }
 
 *{

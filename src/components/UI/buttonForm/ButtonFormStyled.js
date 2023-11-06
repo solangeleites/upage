@@ -1,18 +1,19 @@
 import styled from 'styled-components';
 
 export const ButtonStyle = styled.button`
-  background: black;
-  padding: 0.8rem 1rem;
-  outline: none;
-  border: none;
-  border-radius: 8px;
+  height: 50px;
+  width: 350px;
+  border-radius: 10px;
+  bottom: 50px;
+  right: 150px;
+        background-color: #52BD54;
   color: white;
-  font-weight: 400;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
+  font-weight: bold;
+  border: none;
 
-  &:hover {
-    background: grey;
-    transition: all 0.3s ease-in-out;
-  }
+    &:hover {
+        color: black;
+    }
 `;

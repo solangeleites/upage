@@ -1,12 +1,15 @@
 import styled from 'styled-components';
 import { SecondContainer } from '../../pages/home/HomeStyled';
 import { mobile, tablet } from '../../queries/MediaQueries';
+
+
 export const NewsletterStyle = styled.input`
-  height: 40px;
+  height: 50px;
   width: 400px;
   outline: none;
-  border-radius: 5px;
-  border: 1px solid  transparent;
+  border-radius: 10px;
+  border: 1px solid  lightgray;
+  padding: 10px;
 
   &:focus {
     outline: none;
@@ -14,7 +17,6 @@ export const NewsletterStyle = styled.input`
   &::placeholder{
     font-family: 'Manrope', sans-serif;
     font-size: 15px;
-
   }
 
   ${tablet} {
@@ -54,18 +56,19 @@ ${mobile} {
 `
 
 export const Button = styled.button`
-  height: 40px;
-  width: 100px;
-  outline: none;
-  border-radius: 5px;
-  border: 1px solid  transparent;
-  background-color: white;
-  transition: 0.5s ease;
-  font-family: 'Manrope', sans-serif;
+  height: 50px;
+  width: 200px;
+  border-radius: 10px;
+  bottom: 50px;
+  right: 150px;
+        background-color: #52BD54;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  font-weight: bold;
+  border: none;
 
-  &:hover{
-    cursor: pointer;
-    background-color: black;
-    color: white;
-  }
+    &:hover {
+        color: black;
+    }
 `

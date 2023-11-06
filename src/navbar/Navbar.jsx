@@ -12,7 +12,7 @@ const Navbar = () => {
   const ctx = useContext(MenuContext);
   return (
     <ContainerNavbar>
-        <Logo onClick={() => navigate('/')}>U PAGE</Logo>
+        <Logo onClick={() => navigate('/')}> U PAGE </Logo>
 
         <ContainerLinks isOpen={ctx.isMenuOpen}>
             <LinkItem to="/">Inicio</LinkItem>
