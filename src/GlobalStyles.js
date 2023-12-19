@@ -12,6 +12,7 @@ export const GlobalStyles = createGlobalStyle`
 
 --verde: #9EE784;
 --verde-oscuro: #5A9E78;
+--verde-logo:  #52bd54;
 }
 
 *{

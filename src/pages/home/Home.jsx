@@ -45,11 +45,11 @@ Sé parte de nuestra comunidad y déjanos ser tu socio digital. Juntos, vamos a 
 
       <Enfoque />
 
-      <ContainerNewsletter>
+      {/* <ContainerNewsletter>
         <TextNewsletter style={{textAlign:'center'}}>Suscribite a nuestro newsletter para recibir más información</TextNewsletter>
         
         <Newsletter />
-      </ContainerNewsletter>
+      </ContainerNewsletter> */}
 
     </HomeStyled>
   );

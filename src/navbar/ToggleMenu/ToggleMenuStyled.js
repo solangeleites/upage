@@ -20,22 +20,25 @@ export const HambugerContainer = styled.div`
 
 export const Icon = styled.span`
   position: relative;
-  height: 1.5px;
+  height: 2px;
   width: 75%;
-  background: ${props => (props.clicked ? 'transparent' : 'black')};
+  background: ${props => (props.clicked ? 'transparent' : 'var(--verde-logo)')};
   display: inline-block;
   transition: all 0.3s;
+  border-radius: 10px;
 
   &::before,
   &::after {
-    background-color: black;
+    background-color: var(--verde-logo);
     content: '';
     width: 100%;
-    height: 1.5px;
+    height: 2px;
     display: inline-block;
     position: absolute;
     left: 0;
     transition: all 0.3s;
+    border-radius: 10px;
+
   }
 
   &::before {

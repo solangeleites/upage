@@ -9,9 +9,9 @@ export const ContainerNavbar = styled.nav`
   width: 100%;
   padding: 0px 92px;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.10);
-  background-color: white;
   position: fixed;
-  top: 0;
+  top: 0px;
+  background: white;
 
   ${mobile} {
     padding: 0px;
@@ -27,12 +27,12 @@ export const Logo = styled.img`
 `;
 
 export const ContainerLinks = styled.div`
-  display: flex;
+  /* display: flex;
   justify-content: space-between;
   align-items: center;
   width: 500px;
-
-
+  background: crimson;
+  
   ${tablet} {
     position: absolute;
     flex-direction: column;
@@ -52,5 +52,23 @@ export const ContainerLinks = styled.div`
       width: 100%;
 
     }
+  } */
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  ${tablet} {
+    flex-direction: column;
+    background: white;
+    position: absolute;
+    width: 100%;
+    top: 90px;
+    right: 0;
+    height: calc(100vw - 100px);
+    z-index: 5;
+    transition: all 0.5s ease-in-out;
+    transform: ${(props) =>
+      props.isOpen ? 'translateX(0%)' : 'translateX(200%)'};
   }
 `;
