@@ -38,7 +38,7 @@ Creamos tu web con enfoque único, resaltando la esencia de tu marca. Análisis 
 <br></br>
 <br></br>
 
-Te invitamos a unirte a nosotros en esta emocionante travesía empresarial. Sé parte de nuestra comunidad y déjanos ser tu socio digital. Juntos, vamos a escribir la historia de tu presencia en internet, con un enfoque amigable, sin complicaciones y lleno de entusiasmo. ¡Tu éxito digital comienza con nosotros!
+Sé parte de nuestra comunidad y déjanos ser tu socio digital. Juntos, vamos a escribir la historia de tu presencia en internet, con un enfoque amigable, sin complicaciones y lleno de entusiasmo. ¡Tu éxito digital comienza con nosotros!
 
         </Text>
       </SecondContainer>

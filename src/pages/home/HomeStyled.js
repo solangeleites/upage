@@ -46,6 +46,11 @@ export const TextFirst = styled.p`
   & span {
     color: #52bd54;
   }
+
+  ${tablet} {
+    font-size: 50px;
+    width: 350px;
+  }
 `;
 
 export const SecondContainer = styled.div`

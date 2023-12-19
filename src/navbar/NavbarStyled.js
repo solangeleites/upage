@@ -5,7 +5,7 @@ export const ContainerNavbar = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 120px;
+  height: 100px;
   width: 100%;
   padding: 0px 92px;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.10);
@@ -21,14 +21,9 @@ export const ContainerNavbar = styled.nav`
   }
 `;
 
-export const Logo = styled.h1`
-  font-size: 50px;
+export const Logo = styled.img`
   cursor: pointer;
-  font-weight: 900;
-  & img{
-    width: 100px;
-    height: 100px;
-  }
+    height: 70px;
 `;
 
 export const ContainerLinks = styled.div`
